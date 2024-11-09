@@ -4,7 +4,7 @@ Integrantes:
 Alexander Aquino
 Gerardo Chavez
 Andrés Levano
-Irvin verga
+Irvin vergara
 Diego Vilca
 
 
