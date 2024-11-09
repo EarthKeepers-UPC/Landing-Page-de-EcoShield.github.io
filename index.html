@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOSHIELD</title>
+    <link rel="icon" href="public/favecoshield.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="public/assets/styles/style.css" />
+    <script src=" public/assets/scripts/script1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/926df323b2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" id="inicio">
+        <div class="logo">
+          <img src="public/assets/images/ecoshield.png" alt="logo de EcoShield" />
+          <h1>ECOSHIELD</h1>
+        </div>
+
+        <div class="bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <button
+              class="login-btn"
+              onclick="window.location.href='iniciarsesion.html'"
+            >
+              Iniciar sesión
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="ChatboxAyuda">
+        <div class="chat-icon" onclick="toggleChat()">
+          <img src="public/assets/images/icons8-burbuja-de-diálogo-50.png" />
+        </div>
+
+        <div class="chatbox" id="chatbox">
+          <div class="chatbox-header">
+            <span>Chat</span>
+            <button onclick="toggleChat()">✕</button>
+          </div>
+          <div class="chatbox-body" id="chatboxBody">
+            <p>¡Hola! ¿En qué puedo ayudarte?</p>
+          </div>
+          <div class="chatbox-footer">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Escribe un mensaje..."
+            />
+            <button onclick="sendMessage()">Enviar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="Container_SN">
+        <ul class="Banner_SN">
+          <li>
+            <img src="public/assets/images/icons8-facebook-48.png" width="32" height="32" />
+            <p>
+              <a href="Pagina Oficial" target="_blank"
+                >Danos un like<br />Facebook</a
+              >
+            </p>
+          </li>
+          <li>
+            <img
+              src="public/assets/images/icons8-instagram-48.png"
+              width="32"
+              height="32"
+            />
+            <p>
+              <a href="Pagina Oficial" target="_blank"
+                >Danos un like<br />Instagram</a
+              >
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hero-section">
+        <img src="public/assets/images/Imagen1.png" alt="Imagen1" />
+        <div class="hero-text">
+          <h2>Detección temprana <span>en plantas</span></h2>
+          <p>
+            Nos especializamos en entregarte una detección precisa y confiable
+            para tus plantas
+          </p>
+          <button>Descargar Ahora</button>
+        </div>
+      </section>
+
+      <section class="about">
+        <p class="about-ecoshield">
+          Detecta y protege tus cultivos a tiempo con tecnología inteligente
+          para el cuidado de tus plantas. Alcance sus objetivos y mejore su
+          experiencia en la agricultura con Plantix.
+        </p>
+        <p class="about-investors">
+          Con la confianza de la mayor comunidad agrícola
+        </p>
+        <div class="investors-logos">
+          <img src="public/assets/images/investor1.jpg" alt="midagri" />
+          <img src="public/assets/images/investor2.png" alt="INTAP" />
+          <img src="public/assets/images/investor3.png" alt="igapperu" />
+          <img src="public/assets/images/investor4.png" alt="icrisat" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="servicios" id="servicios">
+        <h2>Servicios</h2>
+        <h2>Lleva la productividad de tus cultivos al siguiente nivel</h2>
+        <div class="feature1">
+          <img src="public/assets/images/feature1_1.png" alt="feature 1" />
+          <div class="feature1-text">
+            <h3>Diagnostique la enfermedad de sus cultivos</h3>
+            <p>
+              Analiza tus cultivos mediante sensores y algoritmos avanzados para
+              detectar signos tempranos de enfermedades y estrés, permitiéndote
+              actuar rápidamente para maximizar la calidad y el rendimiento de
+              cada cosecha.
+            </p>
+          </div>
+        </div>
+        <div class="feature2">
+          <img src="public/assets/images/feature2_1.png" alt="feature 2" />
+          <div class="feature2-text">
+            <h3>Accede a nuestro almanaque de enfermedades y plagas</h3>
+            <p>
+              Consulta información detallada sobre enfermedades y plagas para
+              proteger tus cultivos y maximizar su salud.
+            </p>
+          </div>
+        </div>
+        <div class="feature3">
+          <img src="public/assets/images/feature3_1.png" alt="feature 3" />
+          <div class="feature3-text">
+            <h3>Supervisa tus campos desde las alturas con el Modo Dron</h3>
+            <p>
+              Captura imágenes aéreas para un análisis completo del estado de
+              tus cultivos y accede a una vista integral para detectar áreas
+              problemáticas, optimizando la productividad y permitiendo tomar
+              decisiones informadas de manera remota.
+            </p>
+          </div>
+        </div>
+        <div class="feature4">
+          <img src="public/assets/images/feature4_1.png" alt="feature 4" />
+          <div class="feature4-text">
+            <h3>Conéctate con otros agricultores en el Foro de Comunidad</h3>
+            <p>
+              Comparte experiencias, consejos y soluciones prácticas mientras
+              construyes una red de apoyo con personas que enfrentan los mismos
+              desafíos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="bannerdownload">
+        <img
+          src="public/assets/images/bannerdownload.png"
+          class="banner-image"
+          alt="Banner Ecoshield"
+        />
+        <div class="banner-content">
+          <h2>Descargar Ecoshield</h2>
+          <div class="download-buttons">
+            <img
+              src="public/assets/images/DisponibleGooglePlay.png"
+              alt="Disponible en Google Play"
+            />
+            <img
+              src="public/assets/images/DisponibleAppStore.png"
+              alt="Disponible en App Store"
+            />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <section class="quienes-somos" id="nosotros">
+        <h2>Nosotros</h2>
+        <div class="integrantes">
+          <div class="integrante">
+            <img
+              src="public/assets/images/integrante1.png"
+              alt="Integrante Alexander Aquino"
+            />
+            <h3>Alexander Aquino</h3>
+            <p>Co-Fundador</p>
+          </div>
+          <div class="integrante">
+            <img
+              src="public/assets/images/integrante2.png"
+              alt="Integrante Gerardo Chavez"
+            />
+            <h3>Gerardo Chavez</h3>
+            <p>Co-Fundador</p>
+          </div>
+          <div class="integrante">
+            <img
+              src="public/assets/images/integrante3.png"
+              alt="Integrante Andres Levano"
+            />
+            <h3>Andres Levano</h3>
+            <p>Co-Fundador</p>
+          </div>
+          <div class="integrante">
+            <img
+              src="public/assets/images/integrante4.png"
+              alt="Integrante Irvin Vergara"
+            />
+            <h3>Irvin Vergara</h3>
+            <p>Co-Fundador</p>
+          </div>
+          <div class="integrante">
+            <img src="public/assets/images/integrante5.png" alt="Integrante Diego Vilca" />
+            <h3>Diego Vilca</h3>
+            <p>Co-Fundador</p>
+          </div>
+        </div>
+        <div class="objetivos">
+          <button class="accordion-button" onclick="toggleContent('mision')">
+            Misión
+          </button>
+          <div id="mision" class="accordion-content hidden">
+            <p>
+              Empoderar a los agricultores con herramientas tecnológicas
+              avanzadas que permitan la detección temprana de plagas, asegurando
+              la protección y salud de sus cultivos. A través de la innovación y
+              la inteligencia artificial, buscamos mejorar la eficiencia
+              agrícola, reducir las pérdidas y contribuir a una agricultura más
+              sostenible y rentable, apoyando a los agricultores en su camino
+              hacia un futuro más resiliente y productivo.
+            </p>
+          </div>
+          <button class="accordion-button" onclick="toggleContent('vision')">
+            Visión
+          </button>
+          <div id="vision" class="accordion-content hidden">
+            <p>
+              Nos proyectamos como una herramienta esencial en el manejo
+              agrícola, ayudando a los agricultores a enfrentar los desafíos
+              relacionados con las plagas de manera más efectiva. Con la
+              posibilidad de expansión a nivel global, la aplicación tiene el
+              potencial de transformar la agricultura tradicional, llevando a
+              una producción más segura, eficiente y sostenible.
+            </p>
+          </div>
+          <button class="accordion-button" onclick="toggleContent('valores')">
+            Valores
+          </button>
+          <div id="valores" class="accordion-content hidden">
+            <p>
+              En Earthkeepers, nos caracterizamos por nuestra sostenibilidad en
+              las prácticas agrícolas, la innovación constante en nuestras
+              soluciones tecnológicas, y el compromiso con el éxito de los
+              agricultores. Creemos en la colaboración como clave para enfrentar
+              desafíos, y trabajamos con ética y transparencia en todas nuestras
+              relaciones. Además, nos esforzamos por garantizar la accesibilidad
+              de nuestras herramientas para todos los productores,
+              independientemente de su tamaño o ubicación.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <h2 id="contacto">Contacto</h2>
+      <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre y Apellidos</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe su nombre y apellido"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Número de teléfono</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Escribe su número"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input
+                type="text"
+                id="asunto"
+                name="asunto"
+                placeholder="Escribe el titulo del asunto"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Escribe su correo electrónico"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="requerimiento">Requerimiento</label>
+            <textarea
+              id="requerimiento"
+              name="requerimiento"
+              rows="5"
+              placeholder="Describe brevemente en menos de 500 caracteres"
+              required
+            ></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <hr />
+
+      <section class="google-map">
+        <h2>Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d473.6840452816785!2d-76.9939462407944!3d-12.145465186175501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e3!4m0!4m3!3m2!1d-12.14542952084157!2d-76.99391822789305!5e0!3m2!1ses-419!2spe!4v1730496618042!5m2!1ses-419!2spe"
+          width="100%,"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#contacto">Contactanos</a></li>
+            <li><a href="#servicios">Nuestros servicios</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+            <li><a href="#">Carrera</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          Earthkeepers Copyright © 2024 Earthkeepers - All rights reserved ||
+          Diseñado por: Grupo 2
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
