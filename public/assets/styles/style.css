@@ -254,17 +254,16 @@ hr {
 .feature3,
 .feature4 {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  gap: 50px;
+  width: 80%;
 }
 
 .feature1 img,
 .feature2 img,
 .feature3 img,
 .feature4 img {
-  width: 15%;
+  width: 35%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -277,7 +276,7 @@ hr {
   font-size: 16px;
   line-height: 160%;
   color: #333;
-  width: 30%;
+  width: 45%;
   text-align: left;
 }
 
@@ -298,6 +297,112 @@ hr {
   flex-direction: row;
 }
 
+.nosotros-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-container {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.image-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-side img {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: cover;
+}
+
+.timeline-side {
+  width: 50%;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-side h3 {
+  font-size: 50px;
+  margin: 0;
+  margin: 20px 0px 40px 0px
+}
+
+.timeline-events {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.timeline-box {
+  width: 200px;
+  height: 15px;
+  background-color: #6ab04c;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timeline-box.selected {
+  background-color: #004d40;
+}
+
+.timeline-dates {
+  display: flex;
+  gap: 43%;
+  width: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.timeline-dates span{
+  font-size: 16px;
+}
+
+.timeline-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; 
+  text-align: center;
+  margin-top: 50px;
+  width: 100%; 
+}
+
+.timeline-description p {
+  margin: 0;
+  color: #ffffff;
+  max-width: 600px; 
+  font-size: 18px;
+  line-height: 1.5; 
+  word-wrap: break-word; /
+}
+
+.timeline-description button {
+  background: none;
+  border: none;
+  font-size: 100px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 .quienes-somos {
   padding: 50px;
   background-color: #fefae0;
@@ -312,9 +417,9 @@ hr {
 
 .integrantes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .integrante {
@@ -359,7 +464,7 @@ hr {
 }
 
 .objetivos {
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -477,8 +582,8 @@ hr {
   .feature2 img,
   .feature3 img,
   .feature4 img {
-    width: 30%;
-    margin-bottom: -20px;
+    width: 90%;
+    margin-bottom: 20px;
   }
 
   .feature1-text,
@@ -605,6 +710,34 @@ hr {
   width: 52%;
 }
 
+@media (max-width: 900px) {
+  .bannerdownload {
+    flex-direction: column;
+  }
+
+  .banner-image {
+    width: 100vw;
+    height: auto;
+  }
+
+  .banner-content {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+    transform: none;
+  }
+
+  .download-buttons img {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .download-buttons img:first-child {
+    height: 59px;
+    width: 200px;
+  }
+}
 .Container_SN {
   padding: 0;
   margin: 0;
@@ -629,10 +762,10 @@ hr {
 .Banner_SN li {
   list-style-type: none;
   background-color: #252725;
-  border-radius: 8px; 
-  padding: 10px; 
-  margin: 10px 0; 
-  width: 150px; 
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 150px;
   display: flex;
   align-items: center;
   transition: all 0.25s ease-in-out;
@@ -640,7 +773,7 @@ hr {
 }
 
 .Banner_SN li:hover {
-  margin-left: -80px; 
+  margin-left: -85px;
 }
 
 .Banner_SN li img {
@@ -651,14 +784,14 @@ hr {
   padding: 0;
   margin: 0;
   line-height: 1.2;
-  font-size: 12px; 
-  color: white; 
+  font-size: 12px;
+  color: white;
 }
 
 .Banner_SN li p a {
   text-decoration: none;
   color: white;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .chat-icon {
@@ -680,7 +813,7 @@ hr {
   transition: background-color 0.3s ease;
 }
 
-.chat-icon img{
+.chat-icon img {
   width: 60%;
   transform: scaleX(-1);
 }
@@ -698,7 +831,7 @@ hr {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: none; /* Oculta la ventana de chat inicialmente */
+  display: none;
   flex-direction: column;
 }
 
@@ -755,4 +888,21 @@ hr {
 
 .chatbox-footer button:hover {
   background-color: #004d40;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.about, .feature1, .feature2, .feature3, .feature4, .integrante, .form-container, .google-map iframe{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
 }
