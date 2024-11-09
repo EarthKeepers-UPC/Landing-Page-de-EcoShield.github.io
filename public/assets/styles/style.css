@@ -604,7 +604,55 @@ hr {
     text-align: center;
     width: 100%;
   }
+  
+  .nosotros-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-container,
+  .image-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .timeline-side{
+    width: 100%;
+  }
+
+  .timeline-events {
+    justify-content: center; 
+  }
+
+  .timeline-box {
+    width: 20%; 
+  }
+
+  .timeline-description {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .timeline-description button {
+    font-size: 40px; 
+  }
+
+  .timeline-description p {
+    max-width: 100%; 
+    font-size: 16px; 
+  }
+
+  .image-side img {
+    width: 100%;
+    height: auto;
+  }
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column; 
+  }
 }
+
 
 .footer {
   background: #000000;
