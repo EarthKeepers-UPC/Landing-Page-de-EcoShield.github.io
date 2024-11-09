@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ECOSHIELD</title>
-    <link rel="icon" href="public/favecoshield.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="public/assets/styles/style.css" />
-    <script src=" public/assets/scripts/script1.js"></script>
+    <link rel="icon" href="public/assets/images/favecoshield.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script src="scripts/script1.js"></script>
     <script
       src="https://kit.fontawesome.com/926df323b2.js"
       crossorigin="anonymous"
@@ -74,7 +74,9 @@
           <li>
             <img src="public/assets/images/icons8-facebook-48.png" width="32" height="32" />
             <p>
-              <a href="Pagina Oficial" target="_blank"
+              <a
+                href="https://www.facebook.com/Crakdek10?locale=es_LA"
+                target="_blank"
                 >Danos un like<br />Facebook</a
               >
             </p>
@@ -86,8 +88,16 @@
               height="32"
             />
             <p>
-              <a href="Pagina Oficial" target="_blank"
+              <a href="https://www.instagram.com/kyrieirvin_07/" target="_blank"
                 >Danos un like<br />Instagram</a
+              >
+            </p>
+          </li>
+          <li>
+            <img src="public/assets/images/icons8-whatsapp-48.png" width="32" height="32" />
+            <p>
+              <a href="https://wa.me/51996650682" target="_blank"
+                >Escribenos al <br />Whatsapp</a
               >
             </p>
           </li>
@@ -102,7 +112,11 @@
             Nos especializamos en entregarte una detección precisa y confiable
             para tus plantas
           </p>
-          <button>Descargar Ahora</button>
+          <button
+            onClick="window.open('https://play.google.com/store/apps/details?id=com.peat.GartenBank&pcampaignid=web_share','EcoShield')"
+          >
+            Descargar Ahora
+          </button>
         </div>
       </section>
 
@@ -187,10 +201,12 @@
             <img
               src="public/assets/images/DisponibleGooglePlay.png"
               alt="Disponible en Google Play"
+              onClick="window.open('https://play.google.com/store/apps/details?id=com.peat.GartenBank&pcampaignid=web_share','EcoShield')"
             />
             <img
               src="public/assets/images/DisponibleAppStore.png"
               alt="Disponible en App Store"
+              onClick="window.open('https://apps.apple.com/es/app/plantix-plant-leaf-identifier/id6450135619','EcoShield')"
             />
           </div>
         </div>
@@ -200,87 +216,125 @@
 
       <section class="quienes-somos" id="nosotros">
         <h2>Nosotros</h2>
-        <div class="integrantes">
-          <div class="integrante">
-            <img
-              src="public/assets/images/integrante1.png"
-              alt="Integrante Alexander Aquino"
-            />
-            <h3>Alexander Aquino</h3>
-            <p>Co-Fundador</p>
+
+        <div class="nosotros-container">
+          <div class="timeline-container">
+            <div class="timeline-side">
+              <h3>Linea de Tiempo</h3>
+
+              <div class="timeline-events">
+                <div class="timeline-box" data-index="0"></div>
+                <div class="timeline-box" data-index="1"></div>
+                <div class="timeline-box" data-index="2"></div>
+                <div class="timeline-box" data-index="3"></div>
+              </div>
+
+              <div class="timeline-dates">
+                <span>2024-01</span>
+                <span>2024-02</span>
+              </div>
+
+              <div class="timeline-description">
+                <button class="btn-cambiar" onclick="navigateTimeline(-1)"><i class="fa-solid fa-chevron-left"></i></i></button>
+                <p id="description-text">Conoce la historia de Earthkeepers <br> <small>dale click a la flecha</small></p>
+                <button class="btn-cambiar" onclick="navigateTimeline(1)"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+
+            <div class="image-side">
+              <img
+                id="timeline-image"
+                src="public/assets/images/earthkeepers-timeline0.jpg"
+                alt="Imagen del evento" 
+              />
+            </div>
           </div>
-          <div class="integrante">
-            <img
-              src="public/assets/images/integrante2.png"
-              alt="Integrante Gerardo Chavez"
-            />
-            <h3>Gerardo Chavez</h3>
-            <p>Co-Fundador</p>
+
+          <div class="integrantes">
+            <div class="integrante">
+              <img
+                src="public/assets/images/integrante1.png"
+                alt="Integrante Alexander Aquino"
+              />
+              <h3>Alexander Aquino</h3>
+              <p>Co-Fundador</p>
+            </div>
+            <div class="integrante">
+              <img
+                src="public/assets/images/integrante2.png"
+                alt="Integrante Gerardo Chavez"
+              />
+              <h3>Gerardo Chavez</h3>
+              <p>Co-Fundador</p>
+            </div>
+            <div class="integrante">
+              <img
+                src="public/assets/images/integrante3.png"
+                alt="Integrante Andres Levano"
+              />
+              <h3>Andres Levano</h3>
+              <p>Co-Fundador</p>
+            </div>
+            <div class="integrante">
+              <img
+                src="public/assets/images/integrante4.png"
+                alt="Integrante Irvin Vergara"
+              />
+              <h3>Irvin Vergara</h3>
+              <p>Co-Fundador</p>
+            </div>
+            <div class="integrante">
+              <img
+                src="public/assets/images/integrante5.png"
+                alt="Integrante Diego Vilca"
+              />
+              <h3>Diego Vilca</h3>
+              <p>Co-Fundador</p>
+            </div>
           </div>
-          <div class="integrante">
-            <img
-              src="public/assets/images/integrante3.png"
-              alt="Integrante Andres Levano"
-            />
-            <h3>Andres Levano</h3>
-            <p>Co-Fundador</p>
-          </div>
-          <div class="integrante">
-            <img
-              src="public/assets/images/integrante4.png"
-              alt="Integrante Irvin Vergara"
-            />
-            <h3>Irvin Vergara</h3>
-            <p>Co-Fundador</p>
-          </div>
-          <div class="integrante">
-            <img src="public/assets/images/integrante5.png" alt="Integrante Diego Vilca" />
-            <h3>Diego Vilca</h3>
-            <p>Co-Fundador</p>
-          </div>
-        </div>
-        <div class="objetivos">
-          <button class="accordion-button" onclick="toggleContent('mision')">
-            Misión
-          </button>
-          <div id="mision" class="accordion-content hidden">
-            <p>
-              Empoderar a los agricultores con herramientas tecnológicas
-              avanzadas que permitan la detección temprana de plagas, asegurando
-              la protección y salud de sus cultivos. A través de la innovación y
-              la inteligencia artificial, buscamos mejorar la eficiencia
-              agrícola, reducir las pérdidas y contribuir a una agricultura más
-              sostenible y rentable, apoyando a los agricultores en su camino
-              hacia un futuro más resiliente y productivo.
-            </p>
-          </div>
-          <button class="accordion-button" onclick="toggleContent('vision')">
-            Visión
-          </button>
-          <div id="vision" class="accordion-content hidden">
-            <p>
-              Nos proyectamos como una herramienta esencial en el manejo
-              agrícola, ayudando a los agricultores a enfrentar los desafíos
-              relacionados con las plagas de manera más efectiva. Con la
-              posibilidad de expansión a nivel global, la aplicación tiene el
-              potencial de transformar la agricultura tradicional, llevando a
-              una producción más segura, eficiente y sostenible.
-            </p>
-          </div>
-          <button class="accordion-button" onclick="toggleContent('valores')">
-            Valores
-          </button>
-          <div id="valores" class="accordion-content hidden">
-            <p>
-              En Earthkeepers, nos caracterizamos por nuestra sostenibilidad en
-              las prácticas agrícolas, la innovación constante en nuestras
-              soluciones tecnológicas, y el compromiso con el éxito de los
-              agricultores. Creemos en la colaboración como clave para enfrentar
-              desafíos, y trabajamos con ética y transparencia en todas nuestras
-              relaciones. Además, nos esforzamos por garantizar la accesibilidad
-              de nuestras herramientas para todos los productores,
-              independientemente de su tamaño o ubicación.
-            </p>
+          <div class="objetivos">
+            <button class="accordion-button" onclick="toggleContent('mision')">
+              Misión
+            </button>
+            <div id="mision" class="accordion-content hidden">
+              <p>
+                Empoderar a los agricultores con herramientas tecnológicas
+                avanzadas que permitan la detección temprana de plagas, asegurando
+                la protección y salud de sus cultivos. A través de la innovación y
+                la inteligencia artificial, buscamos mejorar la eficiencia
+                agrícola, reducir las pérdidas y contribuir a una agricultura más
+                sostenible y rentable, apoyando a los agricultores en su camino
+                hacia un futuro más resiliente y productivo.
+              </p>
+            </div>
+            <button class="accordion-button" onclick="toggleContent('vision')">
+              Visión
+            </button>
+            <div id="vision" class="accordion-content hidden">
+              <p>
+                Nos proyectamos como una herramienta esencial en el manejo
+                agrícola, ayudando a los agricultores a enfrentar los desafíos
+                relacionados con las plagas de manera más efectiva. Con la
+                posibilidad de expansión a nivel global, la aplicación tiene el
+                potencial de transformar la agricultura tradicional, llevando a
+                una producción más segura, eficiente y sostenible.
+              </p>
+            </div>
+            <button class="accordion-button" onclick="toggleContent('valores')">
+              Valores
+            </button>
+            <div id="valores" class="accordion-content hidden">
+              <p>
+                En Earthkeepers, nos caracterizamos por nuestra sostenibilidad en
+                las prácticas agrícolas, la innovación constante en nuestras
+                soluciones tecnológicas, y el compromiso con el éxito de los
+                agricultores. Creemos en la colaboración como clave para enfrentar
+                desafíos, y trabajamos con ética y transparencia en todas nuestras
+                relaciones. Además, nos esforzamos por garantizar la accesibilidad
+                de nuestras herramientas para todos los productores,
+                independientemente de su tamaño o ubicación.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -350,7 +404,6 @@
           </div>
         </form>
       </div>
-
       <hr />
 
       <section class="google-map">
@@ -371,10 +424,16 @@
     <footer>
       <div class="footer">
         <div class="row">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/Crakdek10?locale=es_LA"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/kyrieirvin_07/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/@alexanderaquino5749/featured"
+            ><i class="fa fa-youtube"></i
+          ></a>
+          <a href="https://x.com/AylasIrvin"><i class="fa fa-twitter"></i></a>
         </div>
 
         <div class="row">
